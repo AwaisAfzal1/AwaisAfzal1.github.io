@@ -86,7 +86,7 @@ async function getInputValue(){
   else if(value === "about me"){
     trueValue(value);
     createText("Hi, my name is Awais")
-    createText("OSINT Noob , CTF Player, currenyly a junior QA automation engineer, Love to play E-Games, reading books, poetry, appreciateand observe art.")
+    createText("OSINT Noob , CTF Player, currenyly a junior QA automation engineer, Love to play E-Games, reading books, poetry, appreciate and observe art.")
   }
   else if(value === "social -a"){
     trueValue(value);
