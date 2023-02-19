@@ -72,20 +72,20 @@ async function getInputValue(){
   if(value === "all"){
     trueValue(value);
     
-    createCode("projects", "My github page with my projects. Follow me there ;)");
+    createCode("writeups", "My medium page with my writeups. Follow me there ;)");
     createCode("about me", "Who am i and what do i do.");
     createCode("social -a", "All my social networks.");
     createCode("clear", "Clean the terminal.");
     
     
   }
-  else if(value === "projects"){
+  else if(value === "writeups"){
     trueValue(value);
-    createText("<a href='https://github.com/heberleonard2' target='_blank'><i class='fab fa-github white'></i> github.com/heberleonard2</a>")
+    createText("<a href='https://medium.com/@awaisafzal0/' target='_blank'><i class='fab fa-github white'></i> medium.com/@awaisafzal0</a>")
   }
   else if(value === "about me"){
     trueValue(value);
-    createText("Oi, meu nome é Héber ;)")
+    createText("Hi, my name is Awais")
     createText("Desenvolvedor atualmente focado em todo o ecossistema Javascript. Utilizando principalmente a stack <span class='blue'>Node, React e React Native </span>por permitir criar aplicações de forma descomplicada e produtiva.")
   }
   else if(value === "social -a"){
