@@ -30,6 +30,7 @@ async function open_terminal(){
   createCode("about me", "Who am i and what do i do.");
   createCode("all", "See all commands.");
   createCode("social -a", "All my social networks.");
+  createCode("thanks", "Special Thanks to heberleonard2");
 
   await delay(500);
   new_line();
@@ -44,7 +45,7 @@ function new_line(){
   p.setAttribute("class", "path")
   p.textContent = "# user";
   span1.textContent = " in";
-  span2.textContent = " ~/heber-leonard";
+  span2.textContent = " ~/awais-afzal";
   p.appendChild(span1);
   p.appendChild(span2);
   app.appendChild(p);
@@ -76,6 +77,7 @@ async function getInputValue(){
     createCode("social -a", "All my social networks.");
     createCode("clear", "Clean the terminal.");
     
+    
   }
   else if(value === "projects"){
     trueValue(value);
@@ -88,9 +90,10 @@ async function getInputValue(){
   }
   else if(value === "social -a"){
     trueValue(value);
-    createText("<a href='https://github.com/heberleonard2' target='_blank'><i class='fab fa-github white'></i> github.com/heberleonard2</a>")
-    createText("<a href='https://www.linkedin.com/in/heber-leonard/' target='_blank'><i class='fab fa-linkedin-in white'></i> linkedin.com/in/heber-leonard</a>")
-    createText("<a href='https://www.instagram.com/heber_leonard/' target='_blank'><i class='fab fa-instagram white'></i> instagram.com/heber_leonard</a>")
+    createText("<a href='https://github.com/awaisafzal1' target='_blank'><i class='fab fa-github white'></i> github.com/awaisafzal1</a>")
+    createText("<a href='https://www.linkedin.com/in/awais-afzal/' target='_blank'><i class='fab fa-linkedin-in white'></i> linkedin.com/in/awais-afzal</a>")
+    createText("<a href='https://twitter.com/Nurinath0/' target='_blank'><i class='fab fa-twitter white'></i> twitter.com/Nurinath0</a>")
+    createText("<a href='https://medium.com/@awaisafzal0/' target='_blank'><i class='fab fa-medium white'></i> medium.com/@awaisafzal0</a>")
   }
   else if(value === "social"){
     trueValue(value);
@@ -101,6 +104,7 @@ async function getInputValue(){
     document.querySelectorAll("p").forEach(e => e.parentNode.removeChild(e));
     document.querySelectorAll("section").forEach(e => e.parentNode.removeChild(e));
   }
+
   else{
     falseValue(value);
     createText(`command not found: ${value}`)
