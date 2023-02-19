@@ -86,7 +86,7 @@ async function getInputValue(){
   else if(value === "about me"){
     trueValue(value);
     createText("Hi, my name is Awais")
-    createText("Desenvolvedor atualmente focado em todo o ecossistema Javascript. Utilizando principalmente a stack <span class='blue'>Node, React e React Native </span>por permitir criar aplicações de forma descomplicada e produtiva.")
+    createText("OSINT Noob , CTF Player, currenyly a junior QA automation engineer, Love to play E-Games, reading books, poetry, appreciating and observing art.")
   }
   else if(value === "social -a"){
     trueValue(value);
