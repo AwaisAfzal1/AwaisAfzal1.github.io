@@ -182,9 +182,9 @@ input:focus{
 .icone.error{
   color:#F78F85;
 }
+.footer{
 
-.footer-text{
-  background-color:#282A35;
-  
+  background-color: #282A35;
   text-align: right;
- }
+
+}
