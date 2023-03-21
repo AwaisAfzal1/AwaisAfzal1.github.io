@@ -30,6 +30,7 @@ async function open_terminal(){
   createCode("about me", "Who am i and what do i do.");
   createCode("all", "See all commands.");
   createCode("social -a", "All my social networks.");
+  createCode("sensei", "My Sensei.");
   
 
   await delay(500);
@@ -75,6 +76,7 @@ async function getInputValue(){
     createCode("writeups", "My medium page with my writeups. Follow me there ;)");
     createCode("about me", "Who am i and what do i do.");
     createCode("social -a", "All my social networks.");
+    createCode("sensei", "My Sensei Profile.");
     createCode("clear", "Clean the terminal.");
     
     
@@ -82,6 +84,10 @@ async function getInputValue(){
   else if(value === "writeups"){
     trueValue(value);
     createText("<a href='https://medium.com/@awaisafzal0/' target='_blank'><i class='fab fa-github white'></i> medium.com/@awaisafzal0</a>")
+  }
+  else if(value === "sensei"){
+    trueValue(value);
+    createText("<a href='https://arz101.medium.com/' target='_blank'><i class='fab fa-github white'></i> medium.com/@arz101</a>")
   }
   else if(value === "about me"){
     trueValue(value);
