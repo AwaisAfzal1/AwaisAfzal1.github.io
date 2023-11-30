@@ -19,6 +19,10 @@ app.addEventListener("click", function(event){
   input.focus();
 })
 
+function sanitizeInput(input) {
+  return DOMPurify.sanitize(input);
+}
+
 
 async function open_terminal(){
   createText("Welcome");
@@ -68,8 +72,8 @@ function removeInput(){
 }
 
 async function getInputValue(){
-  
-  const value = document.querySelector("input").value;
+  const value = sanitizeInput(document.querySelector("input").value);
+  // const value = document.querySelector("input").value;
   if(value === "all"){
     trueValue(value);
     
